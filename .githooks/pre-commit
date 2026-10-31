@@ -1,0 +1,24 @@
+#!/usr/bin/env sh
+
+# Garante que o Node/npm esteja disponível no PATH (mesmo em clientes Git visuais no macOS/Linux)
+export PATH="/opt/homebrew/bin:/usr/local/bin:$HOME/.volta/bin:$HOME/.fnm:$PATH"
+if [ -d "$HOME/.nvm/versions/node" ]; then
+  LATEST_NODE=$(ls "$HOME/.nvm/versions/node" 2>/dev/null | tail -n 1)
+  if [ -n "$LATEST_NODE" ]; then
+    export PATH="$HOME/.nvm/versions/node/$LATEST_NODE/bin:$PATH"
+  fi
+fi
+
+echo "🔍 [pre-commit] Executando 'npm run build' para verificar erros antes do commit..."
+
+npm run build
+
+if [ $? -ne 0 ]; then
+  echo ""
+  echo "❌ [pre-commit] O build falhou! Corrija os erros de TypeScript/Vite acima antes de realizar o commit."
+  exit 1
+fi
+
+echo "✅ [pre-commit] Build concluído sem erros! Prosseguindo com o commit..."
+exit 0
+
