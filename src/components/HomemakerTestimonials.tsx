@@ -1,5 +1,5 @@
 import React from 'react';
-import { Star, Quote } from 'lucide-react';
+import { Star } from 'lucide-react';
 
 export const HomemakerTestimonials: React.FC = () => {
   const testimonials = [

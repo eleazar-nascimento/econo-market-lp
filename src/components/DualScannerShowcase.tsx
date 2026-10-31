@@ -6,8 +6,6 @@ import {
   CheckCircle2,
   FileCheck,
   Camera,
-  ArrowRight,
-  ShieldAlert,
 } from 'lucide-react';
 
 export const DualScannerShowcase: React.FC = () => {

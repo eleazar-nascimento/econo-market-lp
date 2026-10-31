@@ -6,8 +6,6 @@ import {
   ShieldCheck,
   History,
   Lock,
-  CheckCircle2,
-  SlidersHorizontal,
 } from 'lucide-react';
 
 export const FeaturesGrid: React.FC = () => {

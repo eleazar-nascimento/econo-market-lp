@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ShoppingBag, QrCode, ArrowUpDown, Menu, X, Smartphone, ShieldCheck } from 'lucide-react';
+import { ShoppingBag, Menu, X, Smartphone, ShieldCheck } from 'lucide-react';
 
 export const Navbar: React.FC = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);

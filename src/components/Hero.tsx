@@ -1,7 +1,6 @@
 import React from 'react';
 import {
   TrendingDown,
-  TrendingUp,
   QrCode,
   Sparkles,
   Check,

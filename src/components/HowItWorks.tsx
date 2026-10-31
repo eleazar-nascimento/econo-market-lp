@@ -1,5 +1,5 @@
 import React from 'react';
-import { RotateCcw, ShoppingCart, QrCode, TrendingDown, ArrowRight } from 'lucide-react';
+import { RotateCcw, ShoppingCart, QrCode, TrendingDown } from 'lucide-react';
 
 export const HowItWorks: React.FC = () => {
   const steps = [

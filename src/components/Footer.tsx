@@ -1,5 +1,5 @@
 import React from 'react';
-import { ShoppingBag, ShieldCheck, Heart, Smartphone, ArrowRight } from 'lucide-react';
+import { ShoppingBag, ShieldCheck, Heart, Smartphone } from 'lucide-react';
 
 export const Footer: React.FC = () => {
   return (

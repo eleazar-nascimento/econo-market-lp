@@ -4,12 +4,9 @@ import {
   TrendingUp,
   Minus,
   Check,
-  Plus,
-  Trash2,
   Sparkles,
   RotateCcw,
   ShoppingCart,
-  QrCode,
   DollarSign,
 } from 'lucide-react';
 
